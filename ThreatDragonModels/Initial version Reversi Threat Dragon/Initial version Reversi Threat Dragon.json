@@ -73,14 +73,18 @@
               "type": "tm.Boundary",
               "smooth": true,
               "source": {
-                "x": 955,
-                "y": 278
+                "x": 1021,
+                "y": 507
               },
               "target": {
                 "x": 389,
                 "y": 482
               },
               "vertices": [
+                {
+                  "x": 924,
+                  "y": 258
+                },
                 {
                   "x": 693,
                   "y": 272
@@ -101,8 +105,8 @@
                 "height": 100
               },
               "position": {
-                "x": 672,
-                "y": 33
+                "x": 1051,
+                "y": 5
               },
               "angle": 0,
               "id": "16086c9a-fe6d-4d1a-bb21-407d50018f53",
@@ -153,12 +157,12 @@
                 "id": "168a3b86-14e0-4ded-be44-fee4b31befe9"
               },
               "target": {
-                "id": "16086c9a-fe6d-4d1a-bb21-407d50018f53"
+                "id": "e7200582-ae3f-4286-8b49-9a8b477cdbc3"
               },
               "vertices": [
                 {
-                  "x": 558,
-                  "y": 58
+                  "x": 537,
+                  "y": 61
                 }
               ],
               "id": "8e17196f-4996-4c30-8de1-3e0cf79e9e72",
@@ -178,13 +182,23 @@
                 }
               ],
               "z": 13,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "title": "Generic DDoS attack",
+                  "description": "een gebruiker kan ervoor zorgen dat de site overbelast raakt door veel requests te maken",
+                  "mitigation": "gebruik van firewall"
+                }
+              ],
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasNoOpenThreats isInScope"
+                  "class": "marker-target hasOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
+                  "class": "connection hasOpenThreats isInScope"
                 }
               }
             },
@@ -192,7 +206,7 @@
               "type": "tm.Flow",
               "smooth": true,
               "source": {
-                "id": "16086c9a-fe6d-4d1a-bb21-407d50018f53"
+                "id": "e7200582-ae3f-4286-8b49-9a8b477cdbc3"
               },
               "target": {
                 "id": "168a3b86-14e0-4ded-be44-fee4b31befe9"
@@ -264,7 +278,12 @@
               "target": {
                 "id": "efe4a028-db06-4561-96fa-a9afdfb03c93"
               },
-              "vertices": [],
+              "vertices": [
+                {
+                  "x": 657,
+                  "y": 354
+                }
+              ],
               "id": "29a691bb-d6df-4d6a-90d0-d278d4c39503",
               "labels": [
                 {
@@ -282,13 +301,23 @@
                 }
               ],
               "z": 16,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "een gebruiker kan een query invoeren die voor onbedoelde gevolgen kan zorgen, zoals dataverlies of een datalek",
+                  "title": "SQL injection",
+                  "type": "Information disclosure",
+                  "mitigation": "Prepared Statements"
+                }
+              ],
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasNoOpenThreats isInScope"
+                  "class": "marker-target hasOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
+                  "class": "connection hasOpenThreats isInScope"
                 }
               }
             },
@@ -345,8 +374,8 @@
               },
               "vertices": [
                 {
-                  "x": 758,
-                  "y": 226
+                  "x": 965,
+                  "y": 186
                 }
               ],
               "id": "7ad6363e-3307-4fa2-9389-d03536660ca5",
@@ -384,8 +413,8 @@
               },
               "vertices": [
                 {
-                  "x": 888,
-                  "y": 165
+                  "x": 1095,
+                  "y": 291
                 }
               ],
               "id": "9d14398b-ad29-4a5c-85b8-f2db0f22315b",
@@ -419,8 +448,8 @@
                 "height": 80
               },
               "position": {
-                "x": 1039,
-                "y": 71
+                "x": 1323,
+                "y": 77
               },
               "angle": 0,
               "id": "835ae88e-0f35-4078-9a08-acc1cb61918f",
@@ -449,12 +478,8 @@
               },
               "vertices": [
                 {
-                  "x": 891,
-                  "y": 28
-                },
-                {
-                  "x": 1008,
-                  "y": 50
+                  "x": 1243,
+                  "y": 42
                 }
               ],
               "id": "009dd3f2-0ac3-4c61-8f78-d6086864112e",
@@ -466,7 +491,7 @@
                   },
                   "attrs": {
                     "text": {
-                      "text": "request naar\ndatabase",
+                      "text": "query naar database",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -474,13 +499,23 @@
                 }
               ],
               "z": 21,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "title": "SQL injection",
+                  "type": "Information disclosure",
+                  "description": "een gebruiker kan een query invoeren die voor onbedoelde gevolgen kan zorgen, zoals dataverlies of een datalek",
+                  "mitigation": "Prepared statements"
+                }
+              ],
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasNoOpenThreats isInScope"
+                  "class": "marker-target hasOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
+                  "class": "connection hasOpenThreats isInScope"
                 }
               }
             },
@@ -495,12 +530,8 @@
               },
               "vertices": [
                 {
-                  "x": 1018,
-                  "y": 92
-                },
-                {
-                  "x": 898,
-                  "y": 97
+                  "x": 1204,
+                  "y": 132
                 }
               ],
               "id": "60512b27-973c-4a72-ab22-42dee61c988e",
@@ -534,32 +565,159 @@
               "type": "tm.Boundary",
               "smooth": true,
               "source": {
-                "x": 1138,
-                "y": 6
+                "x": 1323,
+                "y": 13
               },
               "target": {
-                "x": 1081,
-                "y": 231
+                "x": 1293,
+                "y": 249
               },
               "vertices": [
                 {
-                  "x": 1029,
-                  "y": 50
-                },
-                {
-                  "x": 1004,
-                  "y": 153
+                  "x": 1256,
+                  "y": 129
                 }
               ],
               "id": "82f36239-522e-4fba-8965-c35cc5485a52",
               "z": 23,
               "attrs": {}
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 702,
+                "y": 29
+              },
+              "angle": 0,
+              "id": "e7200582-ae3f-4286-8b49-9a8b477cdbc3",
+              "z": 24,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Firewall"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "e7200582-ae3f-4286-8b49-9a8b477cdbc3"
+              },
+              "target": {
+                "id": "16086c9a-fe6d-4d1a-bb21-407d50018f53"
+              },
+              "vertices": [
+                {
+                  "x": 938,
+                  "y": 28
+                }
+              ],
+              "id": "e0a172e3-470b-49ed-933c-aa8c975c6a42",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.46118967439265385,
+                    "offset": -14.477688468218842
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "web request",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 25,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 997,
+                "y": 2
+              },
+              "target": {
+                "x": 840,
+                "y": 164
+              },
+              "vertices": [
+                {
+                  "x": 997,
+                  "y": 102
+                }
+              ],
+              "id": "a7ef4ae6-d91e-4194-b1d6-e3cd9d3e28c5",
+              "z": 26,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "16086c9a-fe6d-4d1a-bb21-407d50018f53"
+              },
+              "target": {
+                "id": "e7200582-ae3f-4286-8b49-9a8b477cdbc3"
+              },
+              "vertices": [
+                {
+                  "x": 934,
+                  "y": 102
+                }
+              ],
+              "id": "cf6a0761-5563-47cb-a747-7101e03a8e58",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.5792386753131626,
+                    "offset": 24.316155009523595
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "web response",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 27,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
             }
           ]
         },
         "size": {
           "height": 694.304931640625,
-          "width": 1466
+          "width": 1696
         }
       }
     ],
