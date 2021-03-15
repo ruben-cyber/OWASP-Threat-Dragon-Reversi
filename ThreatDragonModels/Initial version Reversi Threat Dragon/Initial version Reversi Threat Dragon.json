@@ -5,7 +5,11 @@
     "description": "Reversi is een webapplicatie waarin gebruikers een het spel Reversi met elkaar kunnen spelen."
   },
   "detail": {
-    "contributors": [],
+    "contributors": [
+      {
+        "name": "Ruben"
+      }
+    ],
     "diagrams": [
       {
         "title": "diagram 1",
